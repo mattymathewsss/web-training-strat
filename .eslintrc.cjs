@@ -14,12 +14,13 @@ const config = {
   plugins: ["@typescript-eslint"],
   extends: ["next/core-web-vitals", "plugin:@typescript-eslint/recommended", "plugin:storybook/recommended"],
   rules: {
+    "react/no-unescaped-entities": 0 ,
     "storybook/hierarchy-separator": "error",
     "no-unused-vars": [1, {
       "args": "after-used",
       "argsIgnorePattern": "^_"
     }],
-    "@typescript-eslint/consistent-type-imports": ["warn", {
+    "@typescript-eslint/consistent-type-imports": [0, {
       prefer: "type-imports",
       fixStyle: "inline-type-imports"
     }],
