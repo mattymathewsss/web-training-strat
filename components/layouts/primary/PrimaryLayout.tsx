@@ -1,9 +1,8 @@
 import Head from 'next/head';
-import { Component } from 'react';
 import styles from './PrimaryLayout.module.css';
 
 export interface IPrimaryLayout {
-  children: Component;
+  children: string;
 }
 
 const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children }) => {
