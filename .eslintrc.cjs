@@ -20,6 +20,12 @@ const config = {
       "args": "after-used",
       "argsIgnorePattern": "^_"
     }],
+    "@typescript-eslint/no-empty-interface": [
+      0,
+      {
+        "allowSingleExtends": true
+      }
+    ],
     "@typescript-eslint/consistent-type-imports": [0, {
       prefer: "type-imports",
       fixStyle: "inline-type-imports"
